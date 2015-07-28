@@ -43,7 +43,7 @@ var server = net.createServer(function(client){
 
     } else {
 
-      console.log("... is an invalid question. Sighh..\n");
+      console.log("...is an invalid question. Sighh..\n");
 
       client.write("Questions, bro, questions. Try again.\n");
     }
