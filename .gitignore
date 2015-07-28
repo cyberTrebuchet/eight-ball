@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # Created by https://www.gitignore.io
 
 ### Node ###
+=======
+>>>>>>> 261d9b940643c58b0013bc9edd1a4cc011a63ca0
 # Logs
 logs
 *.log
