@@ -37,6 +37,8 @@ var server = net.createServer(function(client){
 
       var reply = replies[Math.floor(Math.random() * replies.length)].reply + "\n";
 
+      console.log(reply);
+
       client.write(reply);
 
     } else {
