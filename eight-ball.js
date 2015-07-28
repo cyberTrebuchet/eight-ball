@@ -31,15 +31,15 @@ var server = net.createServer(function(client){
 
     var question = data.trim().toLowerCase();
 
-    console.log("Arguments: " + question + "\n");
+    console.log("Question: " + question + "\n");
 
     if (question[question.length - 1] === "?"){
 
       var reply = replies[Math.floor(Math.random() * replies.length)].reply + "\n";
 
-      console.log(reply);
+      console.log("Answer: " + reply);
 
-      client.write(reply);
+      client.write(reply + ", bro.");
 
     } else {
       client.write("Questions, bro, questions. Try again.\n");
