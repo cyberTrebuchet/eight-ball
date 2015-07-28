@@ -35,11 +35,11 @@ var server = net.createServer(function(client){
 
     if (question[question.length - 1] === "?"){
 
-      var reply = replies[Math.floor(Math.random() * replies.length)].reply + "\n";
+      var reply = replies[Math.floor(Math.random() * replies.length)].reply;
 
       console.log("Answer: " + reply);
 
-      client.write(reply + ", bro.");
+      client.write(reply + ", bro.\n");
 
     } else {
 
