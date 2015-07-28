@@ -42,6 +42,9 @@ var server = net.createServer(function(client){
       client.write(reply + ", bro.");
 
     } else {
+
+      console.log("... is an invalid question. Sighh..\n");
+
       client.write("Questions, bro, questions. Try again.\n");
     }
   });
