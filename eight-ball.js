@@ -25,7 +25,7 @@ var server = net.createServer(function(client){
   client.setEncoding("utf8");
 
   client.write("Welcome to Thompson's Magical Ball of Wonder!\n");
-  client.write("Type any old question you want!\n");
+  client.write("Ask any old question you want!\n");
 
   client.on("data", function(data){
 
